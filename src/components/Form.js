@@ -165,7 +165,7 @@ export default class Form extends Component {
       }
     }
 
-    this.setState({ errors: [], errorSchema: {} }, () => {
+    setState(this, { errors: [], errorSchema: {} }, () => {
       if (this.props.onSubmit) {
         this.props.onSubmit({ ...this.state, status: "submitted" });
       }
